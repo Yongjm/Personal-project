@@ -1,0 +1,17 @@
+{
+    "scripts": {
+        "start": "npm-run-all --parallel start:*",
+        "start:main": "npx live-server --port=3000 --entry-file=main.html",
+        "start:vue": "cd myvue3project && npm run dev",
+        "dev": "vite"
+    },
+    "dependencies": {
+        "bootstrap": "^5.2.3",
+        "vue": "^3.2.36"
+    },
+    "devDependencies": {
+        "@vue/compiler-sfc": "^3.2.47",
+        "live-server": "^1.1.0",
+        "npm-run-all": "^4.1.5"
+    }
+}

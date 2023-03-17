@@ -1,0 +1,115 @@
+$body-bg: #b2ffff;
+
+.topImage {
+    height: 20vh;
+}
+
+.gap {
+    display: inline-block;
+    width: 10px; /* adjust the width to set the size of the gap */
+}
+
+.imageContainer:before,
+.imageContainer:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 35%;
+  z-index: -1;
+}
+
+.imageContainer:before {
+  right: 0.5em;
+  margin-left: -10%;
+}
+
+.imageContainer:after {
+  left: 0.5em;
+  margin-right: -10%;
+}
+  
+.navbar-brand {
+    height: 10vh
+}
+
+.sidebar {
+  position: fixed;
+  top: 13%;
+  left: -250px; /* Off-screen position */
+  height: 100%;
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out; /* Add transition */
+}
+
+.sidebar.active {
+  transform: translateX(250px); /* Slide in position */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #343a40;
+  text-decoration: none;
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 1px;
+  height: 60px;
+  width: 60px;
+  font-size: small;
+  right: -65px; /* Off-screen position */
+  word-wrap: break-word;
+}
+
+.sidebar.active .sidebar-toggle {
+  right: 10px; /* Move toggle button when sidebar is active */
+  top: 5px;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    width: auto;
+    box-shadow: none;
+  }
+}
+
+.yanfeiGif {
+    height: 20vh;
+}
+
+.copy-btn {
+    z-index: 1000;
+}
+
+.code-box {
+    border: white solid;
+}
+
+.vue {
+  background-color: #eaead6;
+}
+
+.testingSpace {
+  border: solid;
+}
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
