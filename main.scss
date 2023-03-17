@@ -32,7 +32,8 @@ $body-bg: #b2ffff;
 }
   
 .navbar-brand {
-    height: 10vh
+    width: 50%;
+    height: auto;
 }
 
 .sidebar {
@@ -88,10 +89,6 @@ $body-bg: #b2ffff;
     width: auto;
     box-shadow: none;
   }
-}
-
-.yanfeiGif {
-    height: 20vh;
 }
 
 .copy-btn {
