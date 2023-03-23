@@ -1,7 +1,7 @@
 {
     "scripts": {
         "start": "npm-run-all --parallel start:*",
-        "start:main": "npx live-server --port=3000 --entry-file=main.html",
+        "start:main": "npx live-server --port=3000 --entry-file=main.html --host=localhost",
         "start:vue": "cd myvue3project && npm run dev",
         "dev": "vite"
     },

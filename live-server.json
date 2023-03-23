@@ -1,0 +1,10 @@
+{
+  "roots": [
+    ".",
+    "./myvue3project"
+  ],
+  "mime": {
+    "text/javascript": ["js", "mjs", "jsx"],
+    "text/html": ["html"]
+  }
+}
